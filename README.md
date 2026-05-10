@@ -82,8 +82,9 @@ https://aguerrero202410.github.io/portafolio-personal/
 
 Configuración aplicada:
 
-- GitHub Pages publica desde la rama `main`
-- Carpeta publicada: `/docs`
+- GitHub Pages publica actualmente desde la rama `main`
+- Carpeta publicada actual: `/docs`
+- También quedó preparado un workflow de GitHub Actions para migrar el despliegue cuando la configuración de Pages se cambie a `GitHub Actions`
 - El build de producción usa `base href` igual a `/portafolio-personal/`
 
 Flujo recomendado:
@@ -94,6 +95,8 @@ git add docs
 git commit -m "Actualizar sitio"
 git push
 ```
+
+Cuando se cambie la fuente de GitHub Pages a `GitHub Actions`, el workflow desplegará automáticamente con cada push a `main`.
 
 ## Contacto
 
