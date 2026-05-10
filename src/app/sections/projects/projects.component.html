@@ -1,16 +1,39 @@
-<section id="projects" class="services">
+<section id="projects" class="projects section-bg">
   <div class="container">
     <div class="section-title">
       <h2>Proyectos destacados</h2>
-      <p>Una muestra breve de soluciones en las que participé directamente desde el diseño técnico hasta la implementación.</p>
+      <p>
+        Selección de iniciativas en las que participé desde el diseño técnico hasta la implementación, manteniendo
+        enfoque en impacto de negocio, seguridad y confidencialidad.
+      </p>
     </div>
 
-    <div class="row">
-      <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" *ngFor="let project of projects; let i = index" [attr.data-aos-delay]="i * 100">
-        <div class="icon"><i class="bi bi-kanban"></i></div>
-        <h4 class="title">{{ project.title }}</h4>
-        <p class="description">{{ project.description }}</p>
-        <p class="description"><strong>Tecnologías:</strong> {{ project.technologies }}</p>
+    <div class="row gy-4">
+      <div
+        class="col-xl-6 col-lg-6"
+        data-aos="fade-up"
+        *ngFor="let project of projects; let i = index"
+        [attr.data-aos-delay]="i * 100"
+      >
+        <article class="project-card h-100">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <i class="bi" [ngClass]="project.icon"></i>
+            </div>
+            <div>
+              <h3>{{ project.title }}</h3>
+              <p class="project-focus">{{ project.focus }}</p>
+            </div>
+          </div>
+
+          <p class="project-description">{{ project.description }}</p>
+
+          <div class="project-tech-list" aria-label="Tecnologías del proyecto">
+            <span class="project-tech" *ngFor="let technology of project.technologies">
+              {{ technology }}
+            </span>
+          </div>
+        </article>
       </div>
     </div>
   </div>
