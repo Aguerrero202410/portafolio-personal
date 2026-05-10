@@ -64,7 +64,7 @@ http://localhost:4200
 ng build
 ```
 
-Los artefactos generados se ubicarán en la carpeta `docs/`, que es la carpeta publicada por GitHub Pages para este repositorio.
+Los artefactos generados se ubicarán en la carpeta `dist/aguerrero-portafolio/`.
 
 También puedes usar:
 
@@ -82,21 +82,18 @@ https://aguerrero202410.github.io/portafolio-personal/
 
 Configuración aplicada:
 
-- GitHub Pages publica actualmente desde la rama `main`
-- Carpeta publicada actual: `/docs`
-- También quedó preparado un workflow de GitHub Actions para migrar el despliegue cuando la configuración de Pages se cambie a `GitHub Actions`
+- GitHub Pages publica mediante GitHub Actions
+- El workflow construye Angular y publica el artefacto generado desde `dist/aguerrero-portafolio/`
 - El build de producción usa `base href` igual a `/portafolio-personal/`
 
 Flujo recomendado:
 
 ```bash
-npm run build
-git add docs
 git commit -m "Actualizar sitio"
 git push
 ```
 
-Cuando se cambie la fuente de GitHub Pages a `GitHub Actions`, el workflow desplegará automáticamente con cada push a `main`.
+Con cada push a `main`, GitHub Actions despliega automáticamente la última versión.
 
 ## Contacto
 
