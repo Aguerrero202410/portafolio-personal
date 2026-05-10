@@ -1,27 +1,72 @@
-# AguerreroPortafolio
+# Portafolio Profesional - Arturo Guerrero
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 21.2.10.
+Portafolio personal desarrollado en Angular para presentar mi experiencia profesional, habilidades técnicas, formación y trayectoria como líder técnico y jefe de desarrollo de software.
 
-## Development server
+## Perfil profesional
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Jefe de Desarrollo de Software especializado en desarrollo backend con .NET, arquitectura de soluciones, integración de sistemas empresariales, seguridad aplicativa, gobierno técnico y servicios cloud en Azure.
 
-## Code scaffolding
+Mi enfoque combina experiencia técnica hands-on con liderazgo de equipos, documentación, estandarización, automatización y mejora continua para construir soluciones mantenibles, seguras y alineadas a los objetivos del negocio.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Especialidades
+
+- Arquitectura backend con .NET y C#
+- APIs REST, servicios empresariales e integración de sistemas
+- Angular, TypeScript y desarrollo frontend empresarial
+- SQL Server, Azure SQL y bases de datos relacionales
+- Azure App Service, Functions, Service Bus, Key Vault y API Management
+- Seguridad aplicativa, JWT, SSO, protección de APIs y gestión de secretos
+- Gobierno técnico, documentación, estándares de código y buenas prácticas
+- Liderazgo de equipos de desarrollo y coordinación con áreas de negocio
+
+## Tecnologías principales
+
+- **Backend:** .NET, C#, APIs REST, Entity Framework, servicios SOAP/REST
+- **Frontend:** Angular, TypeScript, JavaScript, HTML, CSS
+- **Base de datos:** SQL Server, Azure SQL, MySQL
+- **Cloud:** Azure App Service, Azure Functions, Service Bus, Key Vault, API Management
+- **Herramientas:** Git, GitHub, Azure DevOps, Jira, Confluence, Power BI
+- **Integraciones:** Salesforce, Dynamics 365, SAP y servicios externos
+
+## Objetivo del proyecto
+
+Este repositorio funciona como hoja de vida web y portafolio profesional. Su objetivo es presentar de manera clara mi experiencia, fortalezas técnicas y enfoque de trabajo en proyectos de software empresarial.
+
+## Ejecución local
+
+Instalar dependencias:
+
+```bash
+npm install
+```
+
+Ejecutar en ambiente local:
+
+```bash
+npm start
+```
+
+También puede ejecutarse con Angular CLI:
+
+```bash
+ng serve
+```
+
+Luego abrir:
+
+```text
+http://localhost:4200
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+ng build
+```
 
-## Running unit tests
+Los artefactos generados se ubicarán en la carpeta `dist/`.
 
-Run `ng test` to execute the unit tests with [Vitest](https://vitest.dev/).
+## Contacto
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- LinkedIn: [Arturo Guerrero Gutierrez](https://www.linkedin.com/in/arturo-martin-guerrero-gutierrez)
+- GitHub: [Aguerrero202410](https://github.com/Aguerrero202410)
