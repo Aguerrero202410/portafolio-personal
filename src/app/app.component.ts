@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 
-declare function customInitFunctions(): void;
+declare global {
+  interface Window {
+    customInitFunctions?: () => void;
+  }
+}
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  standalone: true,
 })
-export class AppComponent implements OnInit {
-  ngOnInit(): void {
-    customInitFunctions();
+export class AppComponent implements AfterViewInit {
+  readonly title = 'aguerrero-portafolio';
+
+  ngAfterViewInit(): void {
+    window.customInitFunctions?.();
   }
-  title = 'aguerrero-portafolio';
 }
