@@ -76,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "aguerrero-portafolio:build:production"
+              "buildTarget": "aguerrero-portafolio:build:production"
             },
             "development": {
-              "browserTarget": "aguerrero-portafolio:build:development"
+              "buildTarget": "aguerrero-portafolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,7 +87,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "aguerrero-portafolio:build"
+            "buildTarget": "aguerrero-portafolio:build"
           }
         },
         "test": {
@@ -109,6 +109,5 @@
         }
       }
     }
-  },
-  "defaultProject": "aguerrero-portafolio"
+  }
 }
