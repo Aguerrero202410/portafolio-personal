@@ -1,0 +1,17 @@
+<section id="projects" class="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Proyectos destacados</h2>
+      <p>Una muestra breve de soluciones en las que participé directamente desde el diseño técnico hasta la implementación.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" *ngFor="let project of projects; let i = index" [attr.data-aos-delay]="i * 100">
+        <div class="icon"><i class="bi bi-kanban"></i></div>
+        <h4 class="title">{{ project.title }}</h4>
+        <p class="description">{{ project.description }}</p>
+        <p class="description"><strong>Tecnologías:</strong> {{ project.technologies }}</p>
+      </div>
+    </div>
+  </div>
+</section>

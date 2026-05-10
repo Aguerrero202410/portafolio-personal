@@ -25,5 +25,6 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('#hero h1')?.textContent).toContain('Arturo Guerrero');
+    expect(compiled.querySelector('#projects h2')?.textContent).toContain('Proyectos destacados');
   });
 });

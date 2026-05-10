@@ -1,0 +1,34 @@
+<section id="skills" class="skills section-bg">
+  <div class="container">
+    <div class="section-title">
+      <h2>Aptitudes</h2>
+      <p>
+        Mi perfil combina liderazgo técnico, arquitectura de software, desarrollo backend, integración de sistemas,
+        seguridad aplicativa y uso de servicios cloud. Estas son las capacidades principales que sostienen mi línea
+        profesional actual.
+      </p>
+    </div>
+
+    <div class="row skills-content">
+      <div
+        class="col-lg-6"
+        data-aos="fade-up"
+        *ngFor="let column of skillColumns; let columnIndex = index"
+        [attr.data-aos-delay]="columnIndex === 1 ? 100 : null"
+      >
+        <div class="progress" *ngFor="let skill of column">
+          <span class="skill">{{ skill.name }} <i class="val">{{ skill.level }}%</i></span>
+          <div class="progress-bar-wrap">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              [attr.aria-valuenow]="skill.level"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

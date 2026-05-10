@@ -1,0 +1,64 @@
+<section id="resume" class="resume">
+  <div class="container">
+    <div class="section-title">
+      <h2>Resumen</h2>
+      <p>Estos son algunos datos de mi experiencia profesional.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6" data-aos="fade-up">
+        <h3 class="resume-title">Resumen</h3>
+        <div class="resume-item pb-0">
+          <h4>Arturo Guerrero Gutierrez</h4>
+          <p><em>Te dejo mis datos de contacto.</em></p>
+          <ul>
+            <li>Lima, Peru</li>
+            <li>arturo.guerrero.g&#64;gmail.com</li>
+          </ul>
+        </div>
+
+        <h3 class="resume-title">Educación</h3>
+        <div class="resume-item" *ngFor="let item of education">
+          <h4>{{ item.title }}</h4>
+          <h5>{{ item.period }}</h5>
+          <p><em>{{ item.organization }}</em></p>
+        </div>
+
+        <h3 class="resume-title">Formación complementaria</h3>
+        <div class="resume-item" *ngFor="let item of complementaryEducation">
+          <h4>{{ item.title }}</h4>
+          <h5>{{ item.period }}</h5>
+          <p *ngIf="item.description">{{ item.description }}</p>
+          <ul *ngIf="item.items?.length">
+            <li *ngFor="let detail of item.items">{{ detail }}</li>
+          </ul>
+        </div>
+
+        <h3 class="resume-title">Conocimientos técnicos</h3>
+        <div class="resume-item" *ngFor="let block of knowledgeBlocks">
+          <h4>{{ block.title }}</h4>
+          <ul>
+            <li *ngFor="let detail of block.items">{{ detail }}</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h4>Idiomas</h4>
+          <h5>Inglés Intermedio</h5>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title">Experiencia Profesional</h3>
+        <div class="resume-item" *ngFor="let item of experience">
+          <h4>{{ item.title }}</h4>
+          <h5>{{ item.period }}</h5>
+          <p><em>{{ item.organization }}</em></p>
+          <ul>
+            <li *ngFor="let detail of item.items">{{ detail }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
