@@ -58,4 +58,8 @@ export class ProjectsComponent {
       technologies: ['.NET', 'Azure Key Vault', 'JWT', 'SSO', 'GitHub', 'Azure DevOps'],
     },
   ];
+
+  isLastOddCard(index: number): boolean {
+    return this.projects.length % 2 !== 0 && index === this.projects.length - 1;
+  }
 }
