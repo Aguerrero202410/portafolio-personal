@@ -1,0 +1,166 @@
+.resume-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+:host {
+  display: block;
+}
+
+.resume {
+  padding-bottom: 42px;
+}
+
+.resume-panel:first-child .resume-title {
+  margin-top: 0;
+}
+
+.resume-summary-card,
+.resume-card {
+  height: 100%;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid rgba(31, 82, 151, 0.12);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(5, 13, 24, 0.04);
+}
+
+.resume-group + .resume-group {
+  margin-top: 1.75rem;
+}
+
+.resume-group-label {
+  margin-bottom: 1rem;
+  color: #173b6c;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.resume-summary-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.resume-summary-card h4,
+.resume-card h4 {
+  margin-bottom: 0.75rem;
+  color: #050d18;
+  font-size: 1.15rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.resume-summary-copy,
+.resume-card-copy,
+.resume-card-organization {
+  margin-bottom: 0;
+  color: #272829;
+}
+
+.resume-summary-meta {
+  min-width: min(100%, 290px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.resume-summary-meta li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #272829;
+}
+
+.resume-summary-meta i {
+  color: #149ddd;
+  font-size: 1rem;
+}
+
+.resume-card-period {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: #e4edf9;
+  color: #173b6c;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.resume-card-organization {
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.resume-card-list {
+  margin: 0.9rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.resume-card-list li {
+  padding-bottom: 0.55rem;
+}
+
+.resume-card-list li:last-child {
+  padding-bottom: 0;
+}
+
+.resume-timeline {
+  padding-right: 0.25rem;
+}
+
+.resume-timeline .resume-item:last-child {
+  padding-bottom: 0.35rem;
+}
+
+.resume-timeline .resume-item:last-child::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 18px;
+  bottom: 0;
+  width: 4px;
+  background: #fff;
+}
+
+.resume-item-copy {
+  margin-bottom: 0;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.resume-item-compact {
+  padding-bottom: 0.85rem;
+}
+
+.resume-item-compact h4 {
+  margin-bottom: 0.55rem;
+}
+
+.resume-item-compact h5 {
+  margin-bottom: 0.65rem;
+}
+
+.resume-item-compact p em {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+}
+
+@media (max-width: 767.98px) {
+  .resume-summary-card,
+  .resume-card {
+    padding: 1.25rem;
+  }
+
+  .resume-stack {
+    gap: 2rem;
+  }
+}

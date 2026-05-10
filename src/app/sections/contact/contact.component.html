@@ -2,29 +2,26 @@
   <div class="container">
     <div class="section-title">
       <h2>Contacto</h2>
+      <p>Estoy disponible para conversar sobre liderazgo técnico, arquitectura de software y nuevas oportunidades.</p>
     </div>
 
     <div class="row" data-aos="fade-in">
-      <div class="col-lg-12 d-flex align-items-stretch">
-        <div class="info">
-          <div class="address">
-            <i class="bi bi-geo-alt"></i>
-            <h4>Ubicación:</h4>
-            <p>Lima, Perú</p>
+      <div class="col-lg-12">
+        <div class="contact-card">
+          <div class="row g-4">
+            <div class="col-12 col-md-6" *ngFor="let item of contactItems">
+              <div class="contact-item">
+                <i class="bi" [ngClass]="item.icon"></i>
+                <div>
+                  <h4>{{ item.label }}</h4>
+                  <p *ngIf="!item.href">{{ item.value }}</p>
+                  <p *ngIf="item.href">
+                    <a [href]="item.href" [attr.target]="item.external ? '_blank' : null" [attr.rel]="item.external ? 'noreferrer' : null">{{ item.value }}</a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="email">
-            <i class="bi bi-envelope"></i>
-            <h4>Email:</h4>
-            <p>arturo.guerrero.g&#64;gmail.com</p>
-          </div>
-
-          <iframe
-            src="https://maps.google.com/maps?q=Rimac,%20Lima;%20per%C3%BA&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            style="border: 0; width: 100%; height: 290px;"
-            allowfullscreen
-          ></iframe>
         </div>
       </div>
     </div>
