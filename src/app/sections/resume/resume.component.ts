@@ -21,18 +21,28 @@ type KnowledgeBlock = {
   standalone: true,
   imports: [CommonModule],
   templateUrl: './resume.component.html',
+  styleUrl: './resume.component.css',
 })
 export class ResumeComponent {
+  readonly summary = {
+    name: 'Arturo Guerrero Gutierrez',
+    city: 'Lima, Perú',
+    email: 'arturo.guerrero.g@gmail.com',
+    description:
+      'Profesional de tecnología especializado en desarrollo de software empresarial, arquitectura backend, integración de sistemas y liderazgo técnico. Actualmente enfoco mi trabajo en construir soluciones mantenibles, seguras y escalables, combinando experiencia práctica en .NET, Angular, SQL Server y Azure con gestión de equipos, estandarización técnica y mejora continua.',
+    language: 'Inglés intermedio',
+  };
+
   readonly education: ResumeEntry[] = [
     {
-      title: 'Titulado en Ingeniería de Sistemas.',
+      title: 'Ingeniería de Sistemas',
       period: '2006 - 2010',
-      organization: 'Universidad Tecnológica del Perú, Lima.',
+      organization: 'Universidad Tecnológica del Perú',
     },
     {
-      title: 'Técnico en Computación e Informática.',
+      title: 'Computación e Informática',
       period: '2002 - 2005',
-      organization: 'Instituto Superior Tecnológico IDAT.',
+      organization: 'IDAT',
     },
   ];
 
@@ -55,7 +65,6 @@ export class ResumeComponent {
       ],
     },
   ];
-
   readonly knowledgeBlocks: KnowledgeBlock[] = [
     {
       title: 'Backend y arquitectura',
@@ -175,21 +184,17 @@ export class ResumeComponent {
       title: 'Analista Programador',
       period: '2009 - 2010',
       organization: 'Transportes Pajuelo',
-      items: [
-        'Desarrollo de sistema integrado de la empresa, realizado en Visual Studio .NET 2008, BD SQL Server 2005',
-        'Administrador de Servidor Windows 2003',
-      ],
+      description:
+        'Desarrollo de sistema integrado empresarial en .NET y SQL Server, con apoyo en administración de servidor Windows.',
+      compact: true,
     },
     {
       title: 'Auxiliar de Laboratorios de Cómputo',
       period: '2007 - 2008',
       organization: 'Universidad Tecnológica del Perú - UTP',
-      items: [
-        'Soporte técnico de los laboratorios de cómputo.',
-        'Asesoramiento a los alumnos de la universidad.',
-        'Desarrollo de sistemas relacionados a las actividades académicas (Horarios, Matriculas On Line).',
-        'Manejo del Sistema de Admisión.',
-      ],
+      description:
+        'Soporte técnico, asesoría a alumnos y apoyo en sistemas académicos vinculados a horarios, matrículas y admisión.',
+      compact: true,
     },
   ];
 }
