@@ -64,7 +64,36 @@ http://localhost:4200
 ng build
 ```
 
-Los artefactos generados se ubicarán en la carpeta `dist/`.
+Los artefactos generados se ubicarán en la carpeta `docs/`, que es la carpeta publicada por GitHub Pages para este repositorio.
+
+También puedes usar:
+
+```bash
+npm run build:pages
+```
+
+## Despliegue en GitHub Pages
+
+Este repositorio publica el portafolio en:
+
+```text
+https://aguerrero202410.github.io/portafolio-personal/
+```
+
+Configuración aplicada:
+
+- GitHub Pages publica desde la rama `main`
+- Carpeta publicada: `/docs`
+- El build de producción usa `base href` igual a `/portafolio-personal/`
+
+Flujo recomendado:
+
+```bash
+npm run build
+git add docs
+git commit -m "Actualizar sitio"
+git push
+```
 
 ## Contacto
 

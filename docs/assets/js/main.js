@@ -4,7 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-const customInitFunctions = () => {
+window.customInitFunctions = () => {
     (function () {
         "use strict";
 
@@ -256,5 +256,3 @@ const customInitFunctions = () => {
 
     })()
 }
-
-customInitFunctions();
