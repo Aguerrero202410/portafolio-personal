@@ -1843,7 +1843,8 @@
         customPlaceholder = createHTML(html);
       }
 
-      var placeholder = customPlaceholder ? customPlaceholder : createHTML("<div id=\"".concat(videoID, "\" data-plyr-provider=\"").concat(videoSource, "\" data-plyr-embed-id=\"").concat(embedID, "\"></div>"));
+      var safeEmbedID = String(embedID).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      var placeholder = customPlaceholder ? customPlaceholder : createHTML("<div id=\"".concat(videoID, "\" data-plyr-provider=\"").concat(videoSource, "\" data-plyr-embed-id=\"").concat(safeEmbedID, "\"></div>"));
       addClass(videoWrapper, "".concat(videoSource, "-video gvideo"));
       videoWrapper.appendChild(placeholder);
       videoWrapper.setAttribute('data-id', videoID);
